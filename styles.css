@@ -1,20 +1,31 @@
+/* Gaya umum */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
 header {
     background-color: #333;
     color: #fff;
-    padding: 1em 0;
+    padding: 1em;
     text-align: center;
+}
+
+header img.profile-photo {
+    border-radius: 50%;
+    width: 150px; /* Ukuran gambar profil */
+    height: 150px; /* Ukuran gambar profil */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+    margin-bottom: 1em;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2em;
 }
 
 nav ul {
@@ -24,7 +35,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 1em;
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -32,59 +43,51 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
 section {
     padding: 2em;
-}
-
-#projects, #tools, #contact {
+    margin: 0 10px;
     background-color: #fff;
-    margin: 1em auto;
-    padding: 1em;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
 }
 
-h2 {
-    text-align: center;
-    color: #444;
+section h2 {
+    margin-top: 0;
+}
+
+.project-card, .tool, .contact-method {
+    margin-bottom: 1em;
 }
 
 .project-card {
+    padding: 1em;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
-    padding: 1em;
-    margin-bottom: 1em;
     border-radius: 5px;
-    transition: transform 0.3s ease;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.project-card:hover {
-    transform: scale(1.05);
+.project-card h3 {
+    margin-top: 0;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 0.5em 0;
-}
-
-ul li a {
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-ul li a:hover {
-    color: #0073e6;
+.tool img, .contact-method img {
+    width: 50px; /* Ukuran gambar tool dan logo kontak */
+    height: auto; /* Menjaga rasio aspek gambar */
+    display: block;
+    margin: 0 auto;
 }
 
 footer {
-    text-align: center;
-    padding: 1em 0;
     background-color: #333;
     color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
