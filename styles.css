@@ -76,7 +76,7 @@ section h2 {
 }
 
 .tool img, .contact-method img {
-    width: 50px; /* Ukuran gambar tool dan logo kontak */
+    width: 10px; /* Ukuran gambar tool dan logo kontak */
     height: auto; /* Menjaga rasio aspek gambar */
     display: block;
     margin: 0 auto;
